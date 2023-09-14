@@ -124,11 +124,14 @@ table {
     display: inline-block;
     width: 400px;
     height: 200px;
-    vertical-align: middle;
+    vertical-align: top;
+    font-size: 18px;
 }
 
 .right_column {
     display: inline-block;
+    font-size: 18px;
+    width: 400px;
 }
 
 .right_column div {
@@ -140,4 +143,15 @@ table {
 
 .third > div {
     vertical-align: middle;
+}
+
+.third .third_1 {
+    width: 800px;
+    height: 400px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.top_column_1 {
+    font-size: 0;
 }
