@@ -46,112 +46,82 @@ table {
 	border-spacing: 0;
 }
 
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
 }
 
-.first {
-    background: aqua;
-    font-size: 0px;
-}
-
 .first div {
-    width: 400px;
-    height: 400px;
     outline: 1px solid red;
-    display: inline-block;
-    font-size: 18px;
-}
-
-.second {
-    background: greenyellow;
-    font-size: 0;
-}
-
-.second > div {
-    display: inline-block;
-    height: 400px;
-    width: 800px;
-    font-size: 18px;
-}
-
-.second > div + div {
+    background: aqua;
     width: 400px;
-    font-size: 18px;
+    height: 400px;
+    float: left;
 }
 
 .second div {
+    background: greenyellow;
     outline: 1px solid red;
 }
 
-.second > div > div {
+.second_left {
+    width: 800px;
+    float: left;
+}
+
+.second_left div {
     height: 200px;
 }
 
-.second > div + div > div {
-    height: 133.333px;
+.second_right {
+    width: 400px;
+    float: left;
 }
 
-.second > div {
-    vertical-align: middle;
-}
-
-.third {
-    background: orange;
-    font-size: 0;
+.second_right div {
+    height: 133.33px;
 }
 
 .third div {
+    background: orange;
     outline: 1px solid red;
 }
 
-.third > div {
+.third_left {
     width: 400px;
+    float: left;
+}
+
+.third_left div {
     height: 400px;
-    display: inline-block;
-    font-size: 18px;
 }
 
-.top_column {
-    display: inline-block;
+.third_right {
     width: 800px;
+    float: left;
+}
+
+.third_right > div {
     height: 200px;
-    font-size: 18px;
 }
 
-.left_column {
-    display: inline-block;
+.third_bottom > div {
+    float: left;
     width: 400px;
     height: 200px;
-    vertical-align: top;
-    font-size: 18px;
 }
 
-.right_column {
-    display: inline-block;
-    font-size: 18px;
+.third_right > .third_bottom > .third_bottom_right {
+    float: right;
     width: 400px;
 }
 
-.right_column div {
-    display: inline-block;
-    width: 400px;
+.third_bottom_right > div {
     height: 100px;
-    font-size: 18px;
-}
-
-.third > div {
-    vertical-align: middle;
-}
-
-.third .third_1 {
-    width: 800px;
-    height: 400px;
-    display: inline-block;
-    font-size: 18px;
-}
-
-.top_column_1 {
-    font-size: 0;
 }
